@@ -1,0 +1,106 @@
+@import '@/styles/vars';
+@import '@/styles/mixins';
+@import '@/styles/fonts';
+
+.createTicketHolder {
+   width: 100%;
+   background: #151227;
+   border: 1px solid #1d1b2e;
+   border-radius: 16px;
+   position: relative;
+   padding: 22px;
+   margin: 30px;
+   .title {
+      width: 100%;
+      padding-left: 10px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #1d1b2e;
+      font-family: $font-montserrat;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      color: #fff;
+   }
+
+   form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 20px;
+   }
+
+   .input {
+      width: 100%;
+      padding: 20px;
+      outline: none;
+      background: #1d1b2e;
+      border: 1px solid #37335d;
+      border-radius: 8px;
+      font-family: $font-montserrat;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #fff;
+      resize: none;
+
+      &::placeholder {
+         color: #4c477a;
+      }
+   }
+
+   textarea {
+      height: 300px;
+   }
+
+   .actionsHolder {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      gap: 40px;
+   }
+
+   .sendBtn {
+      transition: 0.3s all ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 260px;
+      height: 65px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      outline: none;
+      padding: 15px;
+      background: #1d1b2e;
+      border: 1px solid #37335d;
+      white-space: nowrap;
+      font-family: $font-montserrat;
+      font-weight: 400;
+      border-radius: 8px;
+      font-size: 16px;
+      line-height: 19px;
+      color: #5e5c8a;
+      gap: 10px;
+   }
+
+   .closeBtn {
+      transition: 0.3s all ease-in-out;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-family: $font-montserrat;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 101.5%;
+      color: #62608f;
+      cursor: pointer;
+      color: #ff9a9a;
+      background: transparent;
+      border: none;
+      gap: 10px;
+      text-decoration: none;
+   }
+}
